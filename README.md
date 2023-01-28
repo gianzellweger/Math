@@ -1,6 +1,6 @@
 <h1>Applescript Math Library</h1>
 
-<h4>All other functions are calculated natively and don't require anything to be installed.</h4>
+<h2>Interactive documentation can be found at <a>https://gianzellweger.github.io/math-docs</a></h2>
 
 <h2>Table of Contents</h2>
 
