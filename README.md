@@ -1,34 +1,5 @@
 <h1>Applescript Math Library</h1>
 
-<h2><b>WARNING:</b></h2>
-
-<h4>This library currently needs `python3` to be installed for the following functions:</h4>
-
-* `sin`
-* `cos`
-* `tan`
-* `log`
-* `log2`
-* `log10`
-* `acos`
-* `acosh`
-* `asin`
-* `asinh`
-* `atan`
-* `atan2`
-* `atanh`
-* `cosh`
-* `tanh`
-* All numbers except for positive integers with `gamma`
-* Functions dependent on the above functions:
-  * `log1p`
-  * `frexp`
-  * `lgamma`
-  * `LOG10E`
-  * `LOG2E`
-  * `LN2`
-  * `LN10`
-
 <h4>All other functions are calculated natively and don't require anything to be installed.</h4>
 
 <h2>Table of Contents</h2>
@@ -66,16 +37,6 @@ tell script "Math" to sqrt(64)
 
 <sup>This is the shortest method if you plan on using the library one time.</sup>
 
-### Note:
-
-Since optional parameters can't be specified otherwise, you have to use `given` like this:
-
-```lang-Applescript
-tell script "Math" to log(4) given base: 2
-```
-
-There is no way around this if you want to use optional parameters.
-
 <h2>Methods</h2>
 
 This library has the following methods and constants:
@@ -91,6 +52,8 @@ This library has the following methods and constants:
 * LOG2E: Returns the base 2 logarithm of E.
 * LN10: Returns the natural logarithm of 10.
 * LN2: Returns the natural logarithm of 2.
+
+<sup>Note: `pi` is an Applescript builtin</sup>
 
 <h3>Methods</h3>
 
@@ -152,25 +115,16 @@ This library has the following methods and constants:
 * imul(x, y): Multiplies x and y.
 * fround(x): Is supposed to return x as a 32-bit floating point number. Is currently obsolete.
 * modf(x): Returns the fractional and the integer part of x in that order.s
-* root(x, y): If y is 2, returns the square root of x, if y is 3, returns the cubic root of x, etc.
-* roundTo(x, y): Rounds x to the nearest y.
-* dec(x): Converts x from base-2, base-8 and base-16 to base-10/decimal.
-* bin(x): Converts x from decimal to binary. Adds a `0b` prefix.
-* oct(x): Converts x from decimal to octal/base-8. Adds a `0o` prefix.
-* hex(x): Converts x from decimal to hexadecimal/base-16. Adds a `0x` prefix.
-* int(x, base): Returns x converted from base-`base` to decimal/base-10.
 
 <h2>Contributing</h2>
 
 This library is currently in development and could be improved. Things that are currently needed, sorted by importance:
 
 1. Testing. A lot of testing.
-2. Native ways to calculate `sin`, `cos`, `tan`, `log`, `log2`, `log10`, `acos`, `acosh`, `asin`, `asinh`, `atan`, `atan2`, `atanh`, `cosh`, `tanh` and all numbers except for positive integers with `gamma`.
-3. Optional Parameters for `isclose` and `prod`.
-4. A way to pass an arbitrary number of arguments to `min` and `max`.
-5. A more accurate way to calculate `erf` and `erfc` since it is relying on `erf`.
-6. The `dec` and `int` functions currently are not able to handle decimal numbers.
-7. Give the `fround` function some use without breaking the original use.
+2. Optional Parameters for `isclose` and `prod`.
+3. A way to pass an arbitrary number of arguments to `min` and `max`.
+4. A more accurate way to calculate `erf` and `erfc` since it is relying on `erf`.
+5. Give the `fround` function some use without breaking the original use.
 
 <h2>Why?</h2>
 
@@ -179,4 +133,3 @@ I did this because of the following reasons:
 * I wanted a challenge.
 * I wanted it to be less of a headache to port code from Javascript or Python to Applescript, because as soon as there was some more complicated math in it, you would have to write ~100 functions. Now I wrote ~100 functions.
 * I wanted to learn something new.
-* I wanted to extend my Github profile to not only have Stackexchange memes on it.
