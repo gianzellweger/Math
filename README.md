@@ -1,23 +1,23 @@
-<h1>Applescript Math Library</h1>
+# Applescript Math Library
 
 ## Interactive documentation can be found at <https://gianzellweger.github.io/math-docs>
 
-<h2>Table of Contents</h2>
+## Table of Contents
 
 * Usage
 * Methods
 * Contributing
 * Why
 
-<h2>Usage</h2>
+## Usage
 
 1. Check if either `/Library/Script Libraries/` or `/Users/[Your name]/Library/Script Libraries/` exists. If not, create either of them.
-2. Move `Math.scptd` in one of those two directories. Move it to the first one if you want all users of the Computer to have access to it and the second one if only you should have access to it.
+2. Move `Math.scpt` in one of those two directories. Move it to the first one if you want all users of the Computer to have access to it and the second one if only you should have access to it.
 3. You can use this library in 3 different ways:
 
 ```lang-applescript
 global math
-set math to load script "/path/to/library.scptd"
+set math to load script "/path/to/library.scpt"
 math's sqrt(64)
 ```
 
