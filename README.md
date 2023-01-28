@@ -37,11 +37,11 @@ tell script "Math" to sqrt(64)
 
 <sup>This is the shortest method if you plan on using the library one time.</sup>
 
-<h2>Methods</h2>
+## Methods
 
 This library has the following methods and constants:
 
-<h3>Constants</h3>
+### Constants
 
 * infinity / inf: Biggest number that Applescript can handle.
 * E: [Euler's Number](https://en.wikipedia.org/wiki/E_%28mathematical_constant%29).
@@ -55,7 +55,7 @@ This library has the following methods and constants:
 
 <sup>Note: `pi` is an Applescript builtin</sup>
 
-<h3>Methods</h3>
+### Methods
 
 * sqrt(x): Returns the square root of x.
 * cbrt(x): Returns the cubic root of x.
@@ -116,7 +116,7 @@ This library has the following methods and constants:
 * fround(x): Is supposed to return x as a 32-bit floating point number. Is currently obsolete.
 * modf(x): Returns the fractional and the integer part of x in that order.s
 
-<h2>Contributing</h2>
+## Contributing
 
 This library is currently in development and could be improved. Things that are currently needed, sorted by importance:
 
@@ -126,7 +126,7 @@ This library is currently in development and could be improved. Things that are 
 4. A more accurate way to calculate `erf` and `erfc` since it is relying on `erf`.
 5. Give the `fround` function some use without breaking the original use.
 
-<h2>Why?</h2>
+## Why?
 
 I did this because of the following reasons:
 
