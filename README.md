@@ -1,6 +1,6 @@
 <h1>Applescript Math Library</h1>
 
-<h2>Interactive documentation can be found at [https://gianzellweger.github.io/math-docs]</h2>
+<h2>Interactive documentation can be found at [here](https://gianzellweger.github.io/math-docs)</h2>
 
 <h2>Table of Contents</h2>
 
